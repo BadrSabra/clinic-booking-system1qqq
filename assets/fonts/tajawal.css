@@ -1,121 +1,642 @@
+/* 
+ * خط Tajawal - خط عربي أنيق للواجهات العربية
+ * إصدار 3.0.0
+ * الرخصة: SIL Open Font License 1.1
+ * المصدر: https://fonts.google.com/specimen/Tajawal
+ */
 
-/* Tajawal Font - Arabic */
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 200;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaLCrTlBg.woff2) format('woff2');
-    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaLCr5IhG0.woff2') format('woff2');
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 300;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbPCrTlBg.woff2) format('woff2');
-    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaJCr5IhG0.woff2') format('woff2');
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbFCrTlBg.woff2) format('woff2');
-    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaHCr5IhG0.woff2') format('woff2');
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 500;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbXCrTlBg.woff2) format('woff2');
-    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaLC75IhG0.woff2') format('woff2');
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 700;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzb6C7TlBg.woff2) format('woff2');
-    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaJCr9IhG0.woff2') format('woff2');
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 800;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbOC7TlBg.woff2) format('woff2');
-    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaJC7hIhG0.woff2') format('woff2');
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 900;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbmC7TlBg.woff2) format('woff2');
-    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaJC7xIhG0.woff2') format('woff2');
+    unicode-range: U+0600-06FF, U+0750-077F, U+08A0-08FF, U+FB50-FDFF, U+FE70-FEFF, U+1EE00-1EEFF;
 }
 
-/* Fallback for non-Arabic characters */
+/* الأحرف اللاتينية */
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 200;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaLCrTlBg.woff2) format('woff2');
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1nzGLCr5I.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 300;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbPCrTlBg.woff2) format('woff2');
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1nzGJCr5I.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbFCrTlBg.woff2) format('woff2');
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1nzGHCr5I.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 500;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbXCrTlBg.woff2) format('woff2');
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1nzGLC75I.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 700;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzb6C7TlBg.woff2) format('woff2');
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1nzGJCr9I.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 800;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbOC7TlBg.woff2) format('woff2');
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1nzGJC7hI.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
     font-family: 'Tajawal';
     font-style: normal;
     font-weight: 900;
-    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbmC7TlBg.woff2) format('woff2');
     font-display: swap;
+    src: url('https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1nzGJC7xI.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+/* تنسيقات الخط العامة */
+body,
+html {
+    font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+/* أوزان الخط المختلفة */
+.tajawal-extra-light {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 200;
+}
+
+.tajawal-light {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 300;
+}
+
+.tajawal-regular {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+}
+
+.tajawal-medium {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+}
+
+.tajawal-bold {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+}
+
+.tajawal-extra-bold {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+}
+
+.tajawal-black {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 900;
+}
+
+/* تحسينات للعرض باللغتين العربية والإنجليزية */
+.arabic-text {
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 0;
+}
+
+.english-text {
+    font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+}
+
+/* تحسينات لخط النسخ */
+.rtl-text {
+    font-family: 'Tajawal', sans-serif;
+    text-align: right;
+    direction: rtl;
+    line-height: 1.8;
+}
+
+.ltr-text {
+    font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    text-align: left;
+    direction: ltr;
+    line-height: 1.6;
+}
+
+/* تحسينات للأرقام */
+.numbers-arabic {
+    font-feature-settings: 'numr' 1, 'lnum' 0;
+}
+
+.numbers-latin {
+    font-feature-settings: 'numr' 0, 'lnum' 1;
+}
+
+/* تنسيقات النصوص الطويلة */
+.long-text {
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.8;
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* تحسينات للعناوين */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+/* تحسينات للروابط */
+a {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+}
+
+/* تحسينات للأزرار */
+button,
+.btn {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+/* تحسينات لمدخلات النصوص */
+input,
+textarea,
+select {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+}
+
+/* تحسينات للقوائم */
+ul,
+ol {
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* تحسينات للجداول */
+table {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+}
+
+th {
+    font-weight: 700;
+}
+
+td {
+    font-weight: 400;
+}
+
+/* تحسينات للشعارات والنصوص البارزة */
+.logo-text {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.hero-title {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* تحسينات للنصوص الصغيرة */
+.small-text {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* تحسينات للنصوص البرمجية */
+code,
+pre {
+    font-family: 'Tajawal', 'Courier New', monospace;
+    font-weight: 400;
+}
+
+/* وسائط استعلام للأجهزة المختلفة */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+/* تحسينات للطباعة */
+@media print {
+    body {
+        font-family: 'Tajawal', serif;
+        font-size: 12pt;
+        line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Tajawal', serif;
+        font-weight: 700;
+    }
+    
+    .no-print {
+        font-family: inherit;
+    }
+}
+
+/* تحسينات للأوضاع المظلمة */
+@media (prefers-color-scheme: dark) {
+    body {
+        font-smooth: always;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* تحسينات للأوضاع الفاتحة */
+@media (prefers-color-scheme: light) {
+    body {
+        font-smooth: auto;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+/* تحسينات الأداء للخطوط */
+.font-loading {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-loaded {
+    font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* تحسينات التدرج في تحميل الخط */
+.font-fallback {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+/* فئة للمساعدة في التحقق من تحميل الخط */
+.tajawal-loaded body {
+    font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* نصوص الكود البرمجي الداخلية */
+.inline-code {
+    font-family: 'Tajawal', 'Courier New', monospace;
+    font-weight: 500;
+    background-color: #f5f5f5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* تحسينات للعناوين المميزة */
+.featured-heading {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* تحسينات للعلامات */
+.badge,
+.tag {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+/* إضافة تحميل الخط بشكل متقدم */
+.tajawal-loader {
+    display: none;
+}
+
+/* الكشف عن دعم الخطوط المتغيرة */
+@supports (font-variation-settings: normal) {
+    .variable-font-support {
+        font-family: 'Tajawal Variable', 'Tajawal', sans-serif;
+    }
+}
+
+/* الأيقونات مع النصوص */
+.icon-text {
+    font-family: 'Tajawal', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* تحسينات للنصوص المنسدلة */
+.dropdown-text {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+}
+
+/* تحسينات للنصوص في البطاقات */
+.card-text {
+    font-family: 'Tajawal', sans-serif;
+    line-height: 1.7;
+}
+
+/* تحسينات للنصوص في التذييل */
+.footer-text {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* تحسينات للنصوص في التنبيهات */
+.alert-text {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* تحسينات للنصوص في النماذج */
+.form-text {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.form-label {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+}
+
+.form-hint {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 300;
+    font-size: 0.875rem;
+}
+
+/* تخصيصات إضافية للنظام */
+.clinicpro-text {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.clinicpro-heading {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
+    color: #2c3e50;
+}
+
+.clinicpro-subheading {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    color: #34495e;
+}
+
+.clinicpro-body {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+    color: #2c3e50;
+    line-height: 1.8;
+}
+
+/* دعم النصوص الطبية */
+.medical-term {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.prescription-text {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+/* تحسينات للتواريخ والأوقات */
+.date-time-text {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-feature-settings: 'tnum' 1;
+}
+
+/* تحسينات للأرقام في الجداول */
+.table-number {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    font-feature-settings: 'tnum' 1;
+    direction: ltr;
+    text-align: left;
+}
+
+/* فئات للمساعدة في التنسيق */
+.text-right-rtl {
+    text-align: right;
+    direction: rtl;
+}
+
+.text-left-ltr {
+    text-align: left;
+    direction: ltr;
+}
+
+/* فئات للأوزان المختلفة */
+.font-weight-light {
+    font-weight: 300 !important;
+}
+
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+.font-weight-medium {
+    font-weight: 500 !important;
+}
+
+.font-weight-semibold {
+    font-weight: 600 !important;
+}
+
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+.font-weight-extrabold {
+    font-weight: 800 !important;
+}
+
+/* تحسينات للعرض على شاشات عالية الدقة */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* تحسينات للعرض على أجهزة iOS */
+@supports (-webkit-touch-callout: none) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/* تحسينات للعرض على أجهزة Android */
+@supports (font-variant-ligatures: no-common-ligatures) {
+    body {
+        font-variant-ligatures: no-common-ligatures;
+    }
+}
+
+/* طباعة الخطوط المحلية كنسخة احتياطية */
+@font-face {
+    font-family: 'Tajawal Local';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Tajawal'), 
+         local('Tajawal Regular'), 
+         local('Tajawal-Regular');
+}
+
+/* فئة للاستخدام عند عدم اتصال الإنترنت */
+.offline-text {
+    font-family: 'Tajawal Local', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* تحميل متقدم للخط مع مؤشر تحميل */
+.tajawal-loading {
+    visibility: hidden;
+}
+
+.tajawal-loaded .tajawal-loading {
+    visibility: visible;
+}
+
+/* نهاية ملف الخطوط */
