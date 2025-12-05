@@ -1,1 +1,133 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - عيادة البرو</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/fonts/tajawal.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- الشريط الجانبي -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="شعار العيادة">
+                    <span>عيادة البرو</span>
+                </a>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="dashboard.html" class="active">
+                    <span>📊</span>
+                    <span>لوحة التحكم</span>
+                </a>
+                <a href="#appointments">
+                    <span>📅</span>
+                    <span>المواعيد</span>
+                </a>
+                <a href="#patients">
+                    <span>👥</span>
+                    <span>المرضى</span>
+                </a>
+                <a href="#doctors">
+                    <span>👨‍⚕️</span>
+                    <span>الأطباء</span>
+                </a>
+                <a href="#reports">
+                    <span>📈</span>
+                    <span>التقارير</span>
+                </a>
+                <a href="settings.html">
+                    <span>⚙️</span>
+                    <span>الإعدادات</span>
+                </a>
+                <a href="index.html" class="logout">
+                    <span>🚪</span>
+                    <span>العودة للرئيسية</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- المحتوى الرئيسي -->
+        <main class="dashboard-content">
+            <!-- شريط العنوان -->
+            <header class="dashboard-header">
+                <div class="header-left">
+                    <h1>لوحة التحكم</h1>
+                    <p class="welcome">مرحباً بك، المسؤول</p>
+                </div>
+                <div class="header-right">
+                    <div class="date-display" id="currentDate"></div>
+                </div>
+            </header>
+
+            <!-- بطاقات الإحصائيات -->
+            <section class="stats-cards">
+                <div class="stat-card">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-info">
+                        <h3>مواعيد اليوم</h3>
+                        <p class="stat-number" id="todayAppointmentsCount">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-info">
+                        <h3>إجمالي المرضى</h3>
+                        <p class="stat-number" id="totalPatientsCount">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">👨‍⚕️</div>
+                    <div class="stat-info">
+                        <h3>عدد الأطباء</h3>
+                        <p class="stat-number" id="doctorsCount">0</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-info">
+                        <h3>الإيرادات اليوم</h3>
+                        <p class="stat-number" id="todayRevenue">0 ر.س</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- جدول المواعيد القادمة -->
+            <section class="appointments-section">
+                <div class="section-header">
+                    <h2>المواعيد القادمة</h2>
+                    <button class="btn btn-primary" onclick="window.location.href='booking.html'">
+                        + موعد جديد
+                    </button>
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="appointments-table">
+                        <thead>
+                            <tr>
+                                <th>الوقت</th>
+                                <th>المريض</th>
+                                <th>الطبيب</th>
+                                <th>نوع الخدمة</th>
+                                <th>الحالة</th>
+                                <th>الإجراءات</th>
+                            </tr>
+                        </thead>
+                        <tbody id="upcomingAppointments">
+                            <!-- سيتم ملؤه بواسطة JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="assets/js/dashboard.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
