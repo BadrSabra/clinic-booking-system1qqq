@@ -1,1 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإعدادات - عيادة البرو</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
+    <link rel="stylesheet" href="assets/fonts/tajawal.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="شعار العيادة">
+                    <span>عيادة البرو</span>
+                </a>
+            </div>
+            
+            <nav class="sidebar-menu">
+                <a href="dashboard.html">
+                    <span>📊</span>
+                    <span>لوحة التحكم</span>
+                </a>
+                <a href="settings.html" class="active">
+                    <span>⚙️</span>
+                    <span>الإعدادات</span>
+                </a>
+                <a href="index.html" class="logout">
+                    <span>🚪</span>
+                    <span>العودة للرئيسية</span>
+                </a>
+            </nav>
+        </aside>
 
+        <main class="dashboard-content">
+            <header class="dashboard-header">
+                <h1>الإعدادات</h1>
+                <p>إدارة إعدادات النظام والتهيئة</p>
+            </header>
+
+            <div class="settings-container">
+                <div class="settings-tabs">
+                    <button class="tab-btn active" data-tab="general">عام</button>
+                    <button class="tab-btn" data-tab="doctors">الأطباء</button>
+                    <button class="tab-btn" data-tab="working-hours">أوقات العمل</button>
+                    <button class="tab-btn" data-tab="notifications">الإشعارات</button>
+                    <button class="tab-btn" data-tab="backup">النسخ الاحتياطي</button>
+                </div>
+
+                <div class="settings-content">
+                    <!-- إعدادات عامة -->
+                    <div class="tab-content active" id="general-tab">
+                        <form id="generalSettings">
+                            <div class="form-group">
+                                <label for="clinicName">اسم العيادة</label>
+                                <input type="text" id="clinicName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clinicPhone">رقم الهاتف</label>
+                                <input type="tel" id="clinicPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clinicEmail">البريد الإلكتروني</label>
+                                <input type="email" id="clinicEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="clinicAddress">العنوان</label>
+                                <textarea id="clinicAddress" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="currency">العملة</label>
+                                <select id="currency">
+                                    <option value="ر.س">ريال سعودي (ر.س)</option>
+                                    <option value="$">دولار ($)</option>
+                                    <option value="€">يورو (€)</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">حفظ التغييرات</button>
+                        </form>
+                    </div>
+
+                    <!-- إدارة الأطباء -->
+                    <div class="tab-content" id="doctors-tab">
+                        <div class="section-header">
+                            <h3>قائمة الأطباء</h3>
+                            <button type="button" class="btn btn-primary" id="addDoctorBtn">
+                                + إضافة طبيب
+                            </button>
+                        </div>
+                        
+                        <table class="doctors-table">
+                            <thead>
+                                <tr>
+                                    <th>الاسم</th>
+                                    <th>التخصص</th>
+                                    <th>الهاتف</th>
+                                    <th>البريد الإلكتروني</th>
+                                    <th>الإجراءات</th>
+                                </tr>
+                            </thead>
+                            <tbody id="doctorsTableBody">
+                                <!-- سيتم ملؤه بواسطة JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- أوقات العمل -->
+                    <div class="tab-content" id="working-hours-tab">
+                        <form id="workingHoursSettings">
+                            <h3>أوقات العمل</h3>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="workStart">بداية الدوام</label>
+                                    <input type="time" id="workStart" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="workEnd">نهاية الدوام</label>
+                                    <input type="time" id="workEnd" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="appointmentDuration">مدة الموعد (بالدقائق)</label>
+                                <input type="number" id="appointmentDuration" min="10" max="120" value="30">
+                            </div>
+
+                            <h4>أيام العمل</h4>
+                            <div class="work-days">
+                                <label class="day-checkbox">
+                                    <input type="checkbox" name="workDays" value="الأحد" checked>
+                                    <span>الأحد</span>
+                                </label>
+                                <label class="day-checkbox">
+                                    <input type="checkbox" name="workDays" value="الاثنين" checked>
+                                    <span>الاثنين</span>
+                                </label>
+                                <label class="day-checkbox">
+                                    <input type="checkbox" name="workDays" value="الثلاثاء" checked>
+                                    <span>الثلاثاء</span>
+                                </label>
+                                <label class="day-checkbox">
+                                    <input type="checkbox" name="workDays" value="الأربعاء" checked>
+                                    <span>الأربعاء</span>
+                                </label>
+                                <label class="day-checkbox">
+                                    <input type="checkbox" name="workDays" value="الخميس" checked>
+                                    <span>الخميس</span>
+                                </label>
+                                <label class="day-checkbox">
+                                    <input type="checkbox" name="workDays" value="الجمعة">
+                                    <span>الجمعة</span>
+                                </label>
+                                <label class="day-checkbox">
+                                    <input type="checkbox" name="workDays" value="السبت">
+                                    <span>السبت</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">حفظ التغييرات</button>
+                        </form>
+                    </div>
+
+                    <!-- الإشعارات -->
+                    <div class="tab-content" id="notifications-tab">
+                        <form id="notificationsSettings">
+                            <h3>إعدادات الإشعارات</h3>
+                            
+                            <div class="form-group">
+                                <label class="switch">
+                                    <input type="checkbox" id="emailNotifications">
+                                    <span class="slider"></span>
+                                    <span class="switch-label">تفعيل الإشعارات عبر البريد الإلكتروني</span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="switch">
+                                    <input type="checkbox" id="smsNotifications">
+                                    <span class="slider"></span>
+                                    <span class="switch-label">تفعيل الإشعارات عبر الرسائل النصية</span>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reminderTime">وقت التذكير قبل الموعد (بالساعات)</label>
+                                <input type="number" id="reminderTime" min="1" max="48" value="24">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">حفظ التغييرات</button>
+                        </form>
+                    </div>
+
+                    <!-- النسخ الاحتياطي -->
+                    <div class="tab-content" id="backup-tab">
+                        <div class="backup-options">
+                            <h3>النسخ الاحتياطي</h3>
+                            
+                            <div class="backup-card">
+                                <h4>تصدير البيانات</h4>
+                                <p>قم بتصدير جميع بيانات النظام إلى ملف JSON</p>
+                                <button type="button" class="btn btn-primary" id="exportBtn">
+                                    📥 تصدير البيانات
+                                </button>
+                            </div>
+
+                            <div class="backup-card">
+                                <h4>استيراد البيانات</h4>
+                                <p>استيراد البيانات من ملف JSON</p>
+                                <input type="file" id="importFile" accept=".json" style="display: none;">
+                                <button type="button" class="btn btn-secondary" id="importBtn">
+                                    📤 استيراد البيانات
+                                </button>
+                            </div>
+
+                            <div class="backup-card warning">
+                                <h4>🔴 إعادة التعيين</h4>
+                                <p>حذف جميع البيانات والعودة إلى الإعدادات الافتراضية</p>
+                                <button type="button" class="btn btn-danger" id="resetBtn">
+                                    إعادة تعيين النظام
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- نافذة إضافة/تعديل طبيب -->
+    <div class="modal" id="doctorModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">إضافة طبيب جديد</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <form id="doctorForm">
+                <input type="hidden" id="doctorId">
+                
+                <div class="form-group">
+                    <label for="modalDoctorName">اسم الطبيب</label>
+                    <input type="text" id="modalDoctorName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="modalSpecialty">التخصص</label>
+                    <input type="text" id="modalSpecialty" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modalPhone">رقم الهاتف</label>
+                        <input type="tel" id="modalPhone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalEmail">البريد الإلكتروني</label>
+                        <input type="email" id="modalEmail">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modalStartTime">بداية الدوام</label>
+                        <input type="time" id="modalStartTime" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalEndTime">نهاية الدوام</label>
+                        <input type="time" id="modalEndTime" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>أيام العمل</label>
+                    <div class="work-days">
+                        <label class="day-checkbox">
+                            <input type="checkbox" name="modalWorkDays" value="الأحد" checked>
+                            <span>الأحد</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" name="modalWorkDays" value="الاثنين" checked>
+                            <span>الاثنين</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" name="modalWorkDays" value="الثلاثاء" checked>
+                            <span>الثلاثاء</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" name="modalWorkDays" value="الأربعاء" checked>
+                            <span>الأربعاء</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" name="modalWorkDays" value="الخميس" checked>
+                            <span>الخميس</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" name="modalWorkDays" value="الجمعة">
+                            <span>الجمعة</span>
+                        </label>
+                        <label class="day-checkbox">
+                            <input type="checkbox" name="modalWorkDays" value="السبت">
+                            <span>السبت</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="btn btn-secondary modal-close">إلغاء</button>
+                    <button type="submit" class="btn btn-primary">حفظ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/settings.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
