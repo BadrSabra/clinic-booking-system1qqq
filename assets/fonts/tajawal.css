@@ -1,1 +1,121 @@
 
+/* Tajawal Font - Arabic */
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 200;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaLCrTlBg.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbPCrTlBg.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbFCrTlBg.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbXCrTlBg.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzb6C7TlBg.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 800;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbOC7TlBg.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbmC7TlBg.woff2) format('woff2');
+    unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+    font-display: swap;
+}
+
+/* Fallback for non-Arabic characters */
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 200;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzaLCrTlBg.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbPCrTlBg.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbFCrTlBg.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbXCrTlBg.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzb6C7TlBg.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 800;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbOC7TlBg.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tajawal';
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://fonts.gstatic.com/s/tajawal/v9/Iura6YBj_oCad4k1rzbmC7TlBg.woff2) format('woff2');
+    font-display: swap;
+}
