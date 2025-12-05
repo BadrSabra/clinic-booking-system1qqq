@@ -1,1 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تجربة النظام - عيادة البرو</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <link rel="stylesheet" href="assets/fonts/tajawal.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="شعار العيادة">
+                <span>عيادة البرو</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="booking.html">حجز موعد</a></li>
+                <li><a href="dashboard.html">لوحة التحكم</a></li>
+                <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="demo.html" class="active">تجربة النظام</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
+    <!-- محتوى الصفحة -->
+    <div class="demo-container">
+        <div class="container">
+            <h1 class="demo-title">تجربة نظام حجز المواعيد</h1>
+            <p class="demo-subtitle">اختبر النظام قبل الشراء</p>
+
+            <div class="demo-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>تجربة حجز موعد</h3>
+                    <p>اختبر عملية حجز موعد كاملة مع بيانات وهمية</p>
+                    <a href="#booking-demo" class="btn btn-primary">ابدأ التجربة</a>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>تجربة لوحة التحكم</h3>
+                    <p>اختبر لوحة التحكم مع بيانات تجريبية</p>
+                    <a href="#dashboard-demo" class="btn btn-primary">ابدأ التجربة</a>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>تجربة الإعدادات</h3>
+                    <p>اختبر إعدادات النظام المختلفة</p>
+                    <a href="#settings-demo" class="btn btn-primary">ابدأ التجربة</a>
+                </div>
+            </div>
+
+            <!-- تجربة الحجز -->
+            <section id="booking-demo" class="demo-section">
+                <h2>تجربة حجز موعد</h2>
+                <div class="demo-content">
+                    <div class="demo-info">
+                        <h3>مميزات نظام الحجز</h3>
+                        <ul>
+                            <li>حجز مواعيد أونلاين 24/7</li>
+                            <li>اختيار الطبيب والتاريخ والوقت المناسب</li>
+                            <li>تأكيد الحجز فورياً</li>
+                            <li>تذكير تلقائي بالمواعيد</li>
+                            <li>إدارة سهلة للمواعيد</li>
+                        </ul>
+                        <p class="note">ملاحظة: هذه تجربة باستخدام بيانات وهمية، لن يتم حفظ أي بيانات حقيقية.</p>
+                    </div>
+                    <div class="demo-preview">
+                        <div class="preview-card">
+                            <h4>نموذج حجز الموعد</h4>
+                            <form id="demoBookingForm">
+                                <div class="form-group">
+                                    <label>اسم المريض</label>
+                                    <input type="text" value="محمد أحمد" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label>رقم الهاتف</label>
+                                    <input type="tel" value="0555555555" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label>الطبيب</label>
+                                    <input type="text" value="د. أحمد محمد - أسنان" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label>التاريخ</label>
+                                    <input type="text" value="2025-12-10" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label>الوقت</label>
+                                    <input type="text" value="10:00" readonly>
+                                </div>
+                                <button type="button" class="btn btn-success" id="simulateBooking">
+                                    محاكاة الحجز
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- تجربة لوحة التحكم -->
+            <section id="dashboard-demo" class="demo-section">
+                <h2>تجربة لوحة التحكم</h2>
+                <div class="demo-content">
+                    <div class="demo-info">
+                        <h3>مميزات لوحة التحكم</h3>
+                        <ul>
+                            <li>عرض إحصائيات مفصلة</li>
+                            <li>إدارة المواعيد والحجوزات</li>
+                            <li>عرض قائمة المرضى</li>
+                            <li>إدارة الأطباء والموظفين</li>
+                            <li>تقارير وإحصائيات</li>
+                        </ul>
+                    </div>
+                    <div class="demo-preview">
+                        <div class="preview-card dashboard-preview">
+                            <h4>لوحة التحكم التجريبية</h4>
+                            <div class="demo-stats">
+                                <div class="demo-stat">
+                                    <h5>مواعيد اليوم</h5>
+                                    <p>8</p>
+                                </div>
+                                <div class="demo-stat">
+                                    <h5>إجمالي المرضى</h5>
+                                    <p>150</p>
+                                </div>
+                                <div class="demo-stat">
+                                    <h5>عدد الأطباء</h5>
+                                    <p>5</p>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="window.location.href='dashboard.html'">
+                                الانتقال إلى لوحة التحكم
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- تجربة الإعدادات -->
+            <section id="settings-demo" class="demo-section">
+                <h2>تجربة الإعدادات</h2>
+                <div class="demo-content">
+                    <div class="demo-info">
+                        <h3>مميزات الإعدادات</h3>
+                        <ul>
+                            <li>تخصيص إعدادات العيادة</li>
+                            <li>إدارة الأطباء والتخصصات</li>
+                            <li>تحديد أوقات العمل</li>
+                            <li>إعدادات الإشعارات</li>
+                            <li>النسخ الاحتياطي والاستعادة</li>
+                        </ul>
+                    </div>
+                    <div class="demo-preview">
+                        <div class="preview-card">
+                            <h4>الإعدادات التجريبية</h4>
+                            <div class="demo-settings">
+                                <div class="setting-item">
+                                    <span>اسم العيادة:</span>
+                                    <span>عيادة البرو</span>
+                                </div>
+                                <div class="setting-item">
+                                    <span>أوقات العمل:</span>
+                                    <span>08:00 - 20:00</span>
+                                </div>
+                                <div class="setting-item">
+                                    <span>عدد الأطباء:</span>
+                                    <span>5 أطباء</span>
+                                </div>
+                                <div class="setting-item">
+                                    <span>مدة الموعد:</span>
+                                    <span>30 دقيقة</span>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary" onclick="window.location.href='settings.html'">
+                                الانتقال إلى الإعدادات
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- دعوة للشراء -->
+            <div class="cta-section">
+                <h2>أعجبك النظام؟</h2>
+                <p>احصل على نسخة كاملة من النظام مع جميع المميزات والدعم الفني</p>
+                <div class="pricing">
+                    <div class="price-card">
+                        <h3>النسخة الأساسية</h3>
+                        <div class="price">500 ر.س</div>
+                        <ul class="features">
+                            <li>✓ نظام حجز المواعيد</li>
+                            <li>✓ لوحة تحكم كاملة</li>
+                            <li>✓ إدارة المرضى والأطباء</li>
+                            <li>✓ دعم فني لمدة شهر</li>
+                            <li>✓ تحديثات لمدة سنة</li>
+                        </ul>
+                        <a href="mailto:sales@clinicpro.com?subject=شراء نسخة أساسية" class="btn btn-primary">
+                            شراء الآن
+                        </a>
+                    </div>
+                    <div class="price-card featured">
+                        <div class="badge">الأكثر مبيعاً</div>
+                        <h3>النسخة المتقدمة</h3>
+                        <div class="price">1000 ر.س</div>
+                        <ul class="features">
+                            <li>✓ كل مميزات النسخة الأساسية</li>
+                            <li>✓ نظام إشعارات SMS</li>
+                            <li>✓ تقارير متقدمة</li>
+                            <li>✓ دعم فني لمدة 3 أشهر</li>
+                            <li>✓ تحديثات دائمة</li>
+                            <li>✓ تثبيت على السيرفر</li>
+                        </ul>
+                        <a href="mailto:sales@clinicpro.com?subject=شراء نسخة متقدمة" class="btn btn-success">
+                            شراء الآن
+                        </a>
+                    </div>
+                    <div class="price-card">
+                        <h3>النسخة المخصصة</h3>
+                        <div class="price">اتصل بنا</div>
+                        <ul class="features">
+                            <li>✓ تخصيص كامل للنظام</li>
+                            <li>✓ تكامل مع أنظمة أخرى</li>
+                            <li>✓ تدريب للموظفين</li>
+                            <li>✓ دعم فني لمدة سنة</li>
+                            <li>✓ تطوير حسب الطلب</li>
+                        </ul>
+                        <a href="mailto:sales@clinicpro.com?subject=طلب نسخة مخصصة" class="btn btn-primary">
+                            اتصل بنا
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- نافذة نجاح الحجز -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>✅ تم الحجز بنجاح!</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>تم حجز موعد مع <strong>د. أحمد محمد</strong> بتاريخ <strong>2025-12-10</strong> الساعة <strong>10:00</strong></p>
+                <p>رقم الحجز: <strong>DEMO-123456</strong></p>
+                <p class="note">هذه محاكاة للعملية فقط، لم يتم حفظ أي بيانات حقيقية.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary modal-close">حسناً</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/demo.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
