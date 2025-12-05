@@ -1,1 +1,99 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - عيادة البرو</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/fonts/tajawal.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.png" alt="شعار العيادة">
+                    <span>عيادة البرو</span>
+                </a>
+                <h1>تسجيل الدخول</h1>
+                <p>الرجاء إدخال بيانات الدخول الخاصة بك</p>
+            </div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">اسم المستخدم</label>
+                    <input type="text" id="username" placeholder="أدخل اسم المستخدم" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">كلمة المرور</label>
+                    <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <span>تذكرني</span>
+                    </label>
+                    <a href="#" class="forgot-password">نسيت كلمة المرور؟</a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">تسجيل الدخول</button>
+
+                <div class="login-footer">
+                    <p>ليس لديك حساب؟ <a href="#" id="registerLink">إنشاء حساب جديد</a></p>
+                </div>
+            </form>
+
+            <!-- نموذج التسجيل -->
+            <form id="registerForm" class="hidden">
+                <div class="form-group">
+                    <label for="regName">الاسم الكامل</label>
+                    <input type="text" id="regName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regEmail">البريد الإلكتروني</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regUsername">اسم المستخدم</label>
+                    <input type="text" id="regUsername" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regPassword">كلمة المرور</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regConfirmPassword">تأكيد كلمة المرور</label>
+                    <input type="password" id="regConfirmPassword" required>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="btn btn-secondary" id="backToLogin">رجوع</button>
+                    <button type="submit" class="btn btn-primary">إنشاء حساب</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="login-info">
+            <h2>نظام إدارة العيادات الطبية</h2>
+            <p>ادخل إلى لوحة التحكم للإدارة الكاملة للعيادة</p>
+            <ul class="features-list">
+                <li>📊 إدارة المواعيد والحجوزات</li>
+                <li>👥 إدارة بيانات المرضى</li>
+                <li>👨‍⚕️ إدارة الأطباء والموظفين</li>
+                <li>📈 تقارير وإحصائيات مفصلة</li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/login.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
