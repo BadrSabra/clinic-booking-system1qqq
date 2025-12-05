@@ -3,55 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عيادتي - نظام حجز المواعيد</title>
+    <title>نظام حجز مواعيد العيادات - عيادة البرو</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fonts/tajawal.css">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
                 <img src="assets/images/logo.png" alt="شعار العيادة">
-                <h1>عيادتي</h1>
-            </div>
+                <span>عيادة البرو</span>
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="demo.html">تجربة النظام</a></li>
+                <li><a href="index.html" class="active">الرئيسية</a></li>
                 <li><a href="booking.html">حجز موعد</a></li>
+                <li><a href="dashboard.html">لوحة التحكم</a></li>
                 <li><a href="login.html">تسجيل الدخول</a></li>
+                <li><a href="demo.html">تجربة النظام</a></li>
             </ul>
-        </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>نظام إدارة العيادات الطبية المتكامل</h1>
+                <p>سهولة في الحجز، دقة في المواعيد، كفاءة في الإدارة</p>
+                <div class="hero-buttons">
+                    <a href="booking.html" class="btn btn-primary">احجز موعدك الآن</a>
+                    <a href="demo.html" class="btn btn-secondary">تجربة النظام</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero.svg" alt="صورة توضيحية">
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2>نظام حجز المواعيد للعيادات</h2>
-            <p>سهل وسريع وآمن لإدارة مواعيد المرضى</p>
-            <a href="booking.html" class="cta-button">احجز موعدًا الآن</a>
-            <a href="demo.html" class="cta-button secondary">جرب النظام</a>
-        </section>
+    <!-- الميزات -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">مميزات النظام</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>حجز مواعيد أونلاين</h3>
+                    <p>امكانية حجز المواعيد في أي وقت ومن أي مكان</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>تذكير بالمواعيد</h3>
+                    <p>إرسال تذكيرات للمرضى قبل الموعد بوقت كاف</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>تقارير وإحصائيات</h3>
+                    <p>تقارير مفصلة عن أداء العيادة والمواعيد</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍⚕️</div>
+                    <h3>إدارة الأطباء</h3>
+                    <p>إدارة كاملة لجدول أعمال الأطباء ومواعيدهم</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="features">
-            <div class="feature">
-                <h3>حجز سهل</h3>
-                <p>يمكن للمرضى حجز المواعيد بسهولة من خلال الموقع.</p>
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.png" alt="شعار العيادة">
+                    <p>نظام إدارة العيادات الطبية المتكامل</p>
+                </div>
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="booking.html">حجز موعد</a></li>
+                        <li><a href="dashboard.html">لوحة التحكم</a></li>
+                        <li><a href="login.html">تسجيل الدخول</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>اتصل بنا</h3>
+                    <p>📞 +966500000000</p>
+                    <p>📧 info@clinicpro.com</p>
+                    <p>📍 الرياض، المملكة العربية السعودية</p>
+                </div>
             </div>
-            <div class="feature">
-                <h3>إدارة مواعيد</h3>
-                <p>إدارة كاملة لمواعيد العيادة من خلال لوحة التحكم.</p>
+            <div class="footer-bottom">
+                <p>© 2025 عيادة البرو. جميع الحقوق محفوظة.</p>
             </div>
-            <div class="feature">
-                <h3>تذكير تلقائي</h3>
-                <p>إرسال تذكير للمرضى قبل الموعد بيوم.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 عيادتي. جميع الحقوق محفوظة.</p>
+        </div>
     </footer>
 
+    <script type="module">
+        import setup from './setup.js';
+        setup();
+    </script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
