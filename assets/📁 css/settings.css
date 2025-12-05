@@ -1,0 +1,342 @@
+.settings-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.settings-tabs {
+    display: flex;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #eee;
+    overflow-x: auto;
+}
+
+.tab-btn {
+    padding: 15px 25px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 16px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    color: #3498db;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.tab-btn.active {
+    color: #3498db;
+    border-bottom-color: #3498db;
+    background-color: white;
+}
+
+.settings-content {
+    padding: 30px;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* النماذج في الإعدادات */
+.settings-content .form-group {
+    margin-bottom: 20px;
+}
+
+.settings-content .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.settings-content .form-row .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.settings-content select,
+.settings-content input[type="time"],
+.settings-content input[type="number"],
+.settings-content input[type="email"],
+.settings-content input[type="tel"],
+.settings-content input[type="text"],
+.settings-content textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 16px;
+}
+
+.settings-content textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* أيام العمل */
+.work-days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.day-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.day-checkbox:hover {
+    background-color: #e9ecef;
+}
+
+.day-checkbox input {
+    margin-left: 8px;
+}
+
+/* الجداول */
+.doctors-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.doctors-table th {
+    background-color: #f8f9fa;
+    padding: 15px;
+    text-align: right;
+    color: #2c3e50;
+    border-bottom: 2px solid #eee;
+}
+
+.doctors-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.doctors-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* النسخ الاحتياطي */
+.backup-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.backup-card {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    transition: all 0.3s;
+}
+
+.backup-card:hover {
+    border-color: #3498db;
+    transform: translateY(-5px);
+}
+
+.backup-card.warning {
+    border-color: #e74c3c;
+    background-color: #fef5f5;
+}
+
+.backup-card h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.backup-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* التبديل (Switch) */
+.switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+    margin-left: 15px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    right: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #3498db;
+}
+
+input:checked + .slider:before {
+    transform: translateX(-26px);
+}
+
+.switch-label {
+    font-weight: normal;
+    color: #333;
+}
+
+/* النافذة المنبثقة (Modal) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 15px;
+    animation: slideIn 0.3s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 2px solid #eee;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    color: #e74c3c;
+}
+
+.modal .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 20px 30px;
+    border-top: 2px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .settings-tabs {
+        flex-direction: column;
+    }
+
+    .tab-btn {
+        text-align: right;
+        border-bottom: none;
+        border-right: 3px solid transparent;
+    }
+
+    .tab-btn.active {
+        border-bottom: none;
+        border-right-color: #3498db;
+    }
+
+    .settings-content {
+        padding: 20px;
+    }
+
+    .settings-content .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .work-days {
+        justify-content: center;
+    }
+
+    .backup-options {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 10px;
+    }
+}
