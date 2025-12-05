@@ -1,0 +1,430 @@
+.demo-container {
+    padding: 120px 0 60px;
+    background-color: #f5f7fa;
+}
+
+.demo-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.demo-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.demo-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.step {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    background-color: #3498db;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.step h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.step p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.demo-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.demo-section h2 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.demo-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.demo-info h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.demo-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.demo-info li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.demo-info li::before {
+    content: "✓";
+    color: #2ecc71;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.note {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    color: #856404;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.demo-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-card {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    width: 100%;
+    max-width: 400px;
+}
+
+.preview-card h4 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.preview-card .form-group {
+    margin-bottom: 15px;
+}
+
+.preview-card label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-weight: bold;
+}
+
+.preview-card input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.dashboard-preview {
+    text-align: center;
+}
+
+.demo-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.demo-stat {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.demo-stat h5 {
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.demo-stat p {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.demo-settings {
+    margin-bottom: 25px;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.setting-item span:first-child {
+    font-weight: bold;
+    color: #666;
+}
+
+.setting-item span:last-child {
+    color: #2c3e50;
+}
+
+/* قسم الدعوة للشراء */
+.cta-section {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.price-card {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+}
+
+.price-card.featured {
+    border: 3px solid #3498db;
+    transform: scale(1.05);
+}
+
+.badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e74c3c;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.price-card h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 30px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #666;
+}
+
+.features li::before {
+    content: "✓";
+    color: #2ecc71;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #27ae60;
+}
+
+/* النافذة المنبثقة */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    display: flex;
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background-color: white;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    animation: slideIn 0.3s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    border-bottom: 2px solid #eee;
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: #2c3e50;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    color: #e74c3c;
+}
+
+.modal-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-body p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.modal-footer {
+    padding: 20px 30px;
+    border-top: 2px solid #eee;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .demo-title {
+        font-size: 2rem;
+    }
+
+    .demo-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-content {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card.featured {
+        transform: none;
+    }
+
+    .preview-card {
+        max-width: 100%;
+    }
+
+    .demo-section {
+        padding: 20px;
+    }
+}
